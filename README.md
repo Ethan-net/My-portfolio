@@ -1,5 +1,5 @@
 
-# Hi there, I'm [Your Name]! 👋
+# Hi there, I'm AKOREDE! 👋
 
 ![Banner Image](your_banner_image_url_here)
 
@@ -11,7 +11,7 @@ I'm a passionate **[Your Job Title / Developer Role]** with experience in **[tec
 - 🔭 Working on: **[current projects or side-projects]**
 - 🌍 Languages: **[programming languages and human languages you speak]**
 - 📫 How to reach me: **[your email address or other contact information]**
-- ⚡ Fun fact: **[a fun fact about yourself]**
+- ⚡ Fun fact: **[I LOVE TECH]**
 
 ## My Skills 🧠
 
