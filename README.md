@@ -39,6 +39,6 @@ I'm a passionate **[Your Job Title / Developer Role]** with experience in **[tec
 
 ## Get in Touch 📬
 
-- wealthgene.blogspot.com
+- **wealthgene.blogspot.com**
 - **[LinkedIn]**(your_linkedin_profile_link)
 - **[Twitter]**(your_twitter_profile_link)
