@@ -10,7 +10,7 @@ I'm a passionate **[Your Job Title / Developer Role]** with experience in **[tec
 - 🌱 Currently learning: **[new technologies or skills you're currently learning]**
 - 🔭 Working on: **[current projects or side-projects]**
 - 🌍 Languages: **[programming languages and human languages you speak]**
-- 📫 How to reach me: **[your email address or other contact information]**
+- 📫 How to reach me: **koredeajibola@gmail.com**
 - ⚡ Fun fact: **[I LOVE TECH]**
 
 ## My Skills 🧠
