@@ -25,8 +25,8 @@ export default function MeHome() {
         </div>
 
         {/* Image Section */}
-        <div className="p-5 md:w-1/2 flex justify-center">
-          <img className="w-[60%] md:w-[80%] lg:w-[50%] rounded-lg shadow-lg" src={myPic} alt="My Profile" />
+        <div className=" md:w-1/2 flex justify-center">
+          <img className="w-[60%] md:w-[80%] lg:w-[50%] rounded-lg" src={myPic} alt="My Profile" />
         </div>
       </div>
     </section>

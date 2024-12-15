@@ -9,73 +9,109 @@
 body {
     font-family: "KoHo", serif;
 }
+.hero-bgimg{
+   clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/* Base Styles for Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#navbar.bg-transparent {
+  background-color: transparent; /* Transparent when at the top */
+  box-shadow: none;
+}
+
+#navbar.bg-black {
+  background-color: black; /* Black when scrolled */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+}
+
+/* Navbar Inner Container */
+#navbar > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+.hamburg{
+    display: none;
+}
+
+/* Navigation Links */
+ul {
+  display: flex;
+  gap: 2.5rem; /* Adjust spacing between buttons */
+  list-style-type: none;
+}
+
+ul button {
+  font-size: 10px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+ul button:hover {
+  color: #fbbf24; /* Tailwind's yellow-600 */
+}
+
+/* Contact Button Styling */
+ul button:last-child {
+  border: 1px solid #fbbf24; /* Tailwind's yellow-600 */
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px; /* Fully rounded button */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul button:last-child:hover {
+  background-color: #fbbf24; /* Tailwind's yellow-600 */
+  color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #navbar > div {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-bg{
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-bgimg{
+    display: none;
+  }
+  .hamburg{
+    display: block;
+}
+
+  ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  ul button {
+    font-size: 12px; /* Slightly larger text for small screens */
+  }
+}
 
 .list-wrapper {
     margin-top: 20px;
-    line-height: 3rem; /* Adjusted for better scaling */
-    height: 15vh; /* Increased for responsive design */
-    overflow: hidden;
-    justify-content: center;
-    width: 60%; /* Default width for medium screens */
+    line-height: 3rem; 
+    width: 60%;
     margin: 0 auto;
 }
 
-.list-wrapper li {
-    list-style: none;
-    font-size: 1.25rem; /* Responsive font size */
-    font-family: "Syne", sans-serif;
-    font-weight: bolder;
-    position: relative;
-    top: 0;
-    animation: slide 20s steps(2) infinite;
-}
 
-@keyframes slide {
-    100% {
-        top: -200%; /* Adjusted to match the line height */
-    }
-}
-
-.list-wrapper li::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    background-color: rgb(0, 0, 0);
-    height: 100%;
-    width: 100%;
-    border-left: 2px solid #ffffff;
-    animation: typing 10s steps(31) infinite;
-}
-
-@keyframes typing {
-    40%,
-    60% {
-        left: calc(100% + 30px);
-    }
-    100% {
-        left: 0;
-    }
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .list-wrapper {
-        width: 80%;
-        line-height: 2.5rem;
-    }
-
-    .list-wrapper li {
-        font-size: 1rem; /* Smaller font for tablets */
-    }
-}
-
-@media (max-width: 480px) {
-    .list-wrapper {
-        width: 90%;
-        line-height: 2rem;
-    }
-
-    .list-wrapper li {
-        font-size: 0.9rem; /* Even smaller font for mobile */
-    }
-}

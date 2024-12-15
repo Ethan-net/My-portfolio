@@ -5,7 +5,7 @@ export default function Techskill() {
         <div className='  bg-black  py-16 mx-auto'>
             <div className='justify-items-center '> 
                 <h1 className='font-bold text-3xl text-yellow-600 ' >Skills</h1>
-                <ul className=''>
+                <ul className='flex flex-col'>
                     <li className='justify-items-center flex items-center '>
                         <ul className='flex gap-5 mt-10'>
                             <li className='bg-black p-7 rounded-md shadow-xl'>
