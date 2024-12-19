@@ -27,7 +27,7 @@ export default function Heropage() {
       </div>
       <div className='bg-black pl-64 pt-20 hero-bgimg justify-items-center '>
 
-      <img className='w-[30vw]' src={myImg} alt="myprof" />
+      <img className='w-[30vw] mx-auto' src={myImg} alt="myprof" />
       </div>
     </div>
   );

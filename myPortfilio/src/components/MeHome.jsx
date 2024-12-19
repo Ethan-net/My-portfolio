@@ -8,7 +8,7 @@ export default function MeHome() {
         {/* Text Section */}
         <div className="md:w-1/2">
           <h1 className="text-2xl md:text-4xl font-bold leading-snug">
-            Let’s get to know <br /> about me Better
+            Let’s get to know <br /> about me better
           </h1>
           <div className="mt-4">
             <p className="text-sm md:text-base text-gray-700">

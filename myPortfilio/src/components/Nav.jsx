@@ -8,6 +8,7 @@ export default function Nav() {
   const { about, setAbout } = useContext(NavContext);
   const { myWork, setMyWork } = useContext(NavContext);
   const { contact, setContact } = useContext(NavContext);
+  const {sidebar, setSidebar} = useContext(NavContext)
 
   const [scrolled, setScrolled] = useState(false);
 
@@ -20,13 +21,30 @@ export default function Nav() {
       }
     };
 
+    
     window.addEventListener("scroll", handleScroll);
-
+    
     // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  useEffect(() => {
+    const handleHambug = () =>{
+      if(window.scrollY > 50){
+        setScrolled(true);
+      }else{
+        setScrolled(false)
+      }
+    }
+
+    window.addEventListener("scroll", handleHambug);
+
+    return()=>{
+      window.removeEventListener("scroll", handleHambug);
+    }
+
+  },[])
 
   return (
     <div
@@ -34,7 +52,7 @@ export default function Nav() {
       className={`fixed top-0 w-full z-50 transition-colors duration-300 ${scrolled ? 'bg-black shadow-md' : 'bg-transparent'
         }`}
     >
-      <img src={hambugmenu} alt="" className='w-16 hamburg'/>
+      <img onClick={()=> setSidebar(!sidebar)} src={hambugmenu} alt="" className={` w-16 hamburg ${scrolled ? 'to-black' : 'to-white'}`}/>
       <div className="flex justify-between w-[80%] mx-auto py-4 items-center">
 
         <Logo />

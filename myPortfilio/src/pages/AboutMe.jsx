@@ -9,7 +9,7 @@ export default function AboutMe() {
       <div className=' rounded-xl shadow-xl relative top-20 left-[20%] bg-white h-[70vh] w-[60vw] overflow-hidden overflow-y-scroll p-10'>
         <button className='bg-black p-2 text-white rounded-full' onClick={() => setAbout(!about)}>{"<--"}</button>
         <h1 className='font-bold text-2xl text-center border-b-2 border-b-yellow-500'>About Me</h1>
-        <img  src='https://media.licdn.com/dms/image/v2/D4D03AQFc66au1WY-0A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1707876435870?e=1738800000&v=beta&t=J54fUscUSHfyeW5O9bML2kkGS5kwL-x_IoacKcWYh-Y' alt='Profile Pic' className='rounded-full mx-auto mb-10 w-24 mt-10 ' />
+        <img src='https://media.licdn.com/dms/image/v2/D4D03AQHGFGnWRTfZjQ/profile-displayphoto-shrink_800_800/B4DZPPUmDCGgAc-/0/1734350104811?e=1740009600&v=beta&t=YqHd4XXgnt77va-rdiA-5qOL9wSoky-d6F55q_vcZ_c' alt='Profile Pic' className='rounded-full mx-auto mb-10 w-24 mt-10 ' />
         <p className='pt-5'>
 
           Hi! I’m a passionate front-end and software developer with a deep interest in creating innovative and efficient solutions to technical challenges. Currently, I am honing my skills in front-end development with JavaScript and React, and I’m also expanding my backend knowledge using Node.js. My work focuses on building user-friendly, responsive websites and web applications that provide seamless experiences.
